@@ -32,4 +32,4 @@ Ignore the first step on 'Mobile setup' instructions given below if you already 
 
 #### Note
 I'm using a library complete uniform UI for ReactJS and React Native, is being developed but there are enough components to help with the app/web page. 
-[React Bulk](https://github.com/caioedut/react-bulk) | 
+[React Bulk](https://github.com/caioedut/react-bulk) 
