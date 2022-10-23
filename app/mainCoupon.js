@@ -1,25 +1,34 @@
-import { Link, Stack } from "expo-router";
-import { StyleSheet } from "react-native";
-import { Button, Box, Text } from "@react-bulk/native";
+import { Link, Stack } from 'expo-router';
+import { StyleSheet, View, ScrollView } from 'react-native';
+import { Button, Box, Text, ListItem } from '@react-bulk/native';
+import { LinearGradient } from 'expo-linear-gradient';
+import CardCoupon from '../components/cardCoupon';
 
-export default function Home() {
-const  color =  "red" ;
-
+export default function MainCoupon() {
   return (
-    <Box>
-      <Text bold color={color}>!</Text>
-      <Button component={Link} href="/expired">
-        Click here
-      </Button>
-    </Box>
+    <ScrollView>
+      <Box flex center component={LinearGradient} colors={['#00a7a5', '#c83863']}>
+        <CardCoupon />
+        <CardCoupon />
+        <CardCoupon />
+        <CardCoupon />
+        <CardCoupon />
+        <CardCoupon />
+      </Box>
+    </ScrollView>
   );
 }
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
-    backgroundColor: "#fff",
-    alignItems: "center",
-    justifyContent: "center",
+    padding: 20,
+    backgroundColor: '#d9d9d9',
+    shadowColor: '#000000',
+    shadowOpacity: 0.8,
+    shadowRadius: 2,
+    shadowOffset: {
+      height: 1,
+      width: 1,
+    },
   },
 });
