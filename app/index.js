@@ -1,25 +1,33 @@
-import { Link, Stack } from "expo-router";
-import { StyleSheet } from "react-native";
-import { Button, Box, Text } from "@react-bulk/native";
+import { Link, Stack } from 'expo-router';
+import { StyleSheet, View } from 'react-native';
+import { Button, Box, Text, ListItem } from '@react-bulk/native';
+import { LinearGradient } from 'expo-linear-gradient';
 
 export default function Home() {
-const  color =  "red" ;
-
   return (
-    <Box>
-      <Text bold color={color}>Open up App.js to start working on your app!</Text>
-      <Button component={Link} href="/expired">
-        Click here
-      </Button>
+    <Box flex center component={LinearGradient} colors={['#08D9D6', '#FF2E63']}>
+        <Box center corners p={8} bg="backgroundLight" >
+          <Text bold m={2}>
+            Check the coupons available to you!
+          </Text>
+          <Button color="secondaryDark" component={Link} href="/mainCoupon" pt={2}>
+            GO!
+          </Button>
+        </Box>
     </Box>
   );
 }
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
-    backgroundColor: "#fff",
-    alignItems: "center",
-    justifyContent: "center",
+    padding:20,
+    backgroundColor:'#d9d9d9',
+    shadowColor: "#000000",
+    shadowOpacity: 0.8,
+    shadowRadius: 2,
+    shadowOffset: {
+      height: 1,
+      width: 1
+    }
   },
 });

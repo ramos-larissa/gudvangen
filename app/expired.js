@@ -6,9 +6,7 @@ export default function Expired() {
   return (
     <Box flex bg="primary" center>
       <Text>OTA</Text>
-      <Link href="/">
-        <Button color="error">Click here</Button>
-      </Link>
+      <Button component={Link} href="/expired" pt={2}>Click</Button>
     </Box>
   );
 }

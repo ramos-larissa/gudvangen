@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "app-cupon",
-    "slug": "app-cupon",
+    "name": "app-coupon",
+    "slug": "app-coupon",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -27,6 +27,6 @@
     "web": {
       "favicon": "./assets/favicon.png"
     },
-    "scheme": "app-cupon"
+    "scheme": "app-coupon"
   }
 }
